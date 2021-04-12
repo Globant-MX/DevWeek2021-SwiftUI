@@ -1,0 +1,13 @@
+### Swift ###
+# Xcode
+
+.DS_Store
+
+## User settings
+*/xcuserdata/
+
+### Xcode Patch ###
+*/*.xcodeproj/xcuserdata/*
+*/*.xcodeproj/xcshareddata/
+*/*.xcodeproj/project.xcworkspace/xcuserdata/*
+*/.DS_Store
