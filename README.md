@@ -12,6 +12,6 @@ _Proyecto creado para la Dev Week de Globant como recurso para mostrar lo que oc
 ## Autores ✒️
 
 * **Dulce Maria Ortiz Hidalgo** - *Desarrolladora y ponente* - [dulce-ortiz](https://github.globant.com/dulce-ortiz)
-* **Montserrat Caballero Montaño** - *Desarrolladora y ponent* - [montserrat-caballero](https://github.globant.com/montserrat-caballero)
+* **Montserrat Caballero Montaño** - *Desarrolladora y ponente* - [montserrat-caballero](https://github.globant.com/montserrat-caballero)
 * **Miguel Angel Gomez Rivero (Specktro)** - *Revisor técnico* - [miguelangel-gomez](https://github.globant.com/miguelangel-gomez)
 * **Anahi Salgado Diaz De La Vegao** - *Revisora de contenido*
