@@ -9,9 +9,12 @@ import Foundation
 import SwiftUI
 
 final class LoginViewModel: ObservableObject {
-  @Published var email = ""
-  @Published var password = ""
-  @Published var isValid = false
+  @Published var email: String  = ""
+  @Published var password: String = ""
+  @Published var isSingUp: Bool = false
+  @Published var singUpEmail: String = ""
+  @Published var singUpPassword: String = ""
+  @Published var reEnterPassword: String = ""
   
   func login() {
     // TODO: Firebase implementation
