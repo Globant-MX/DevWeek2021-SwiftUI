@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		189063682627A4F70055DC05 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063672627A4F70055DC05 /* LoginView.swift */; };
 		1890636B2627A4FD0055DC05 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890636A2627A4FD0055DC05 /* LoginViewModel.swift */; };
 		1890636E2627A5050055DC05 /* SingUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890636D2627A5050055DC05 /* SingUpView.swift */; };
+		189063822628B1510055DC05 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063812628B1510055DC05 /* WalletView.swift */; };
+		189063872628D3670055DC05 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063862628D3670055DC05 /* Banner.swift */; };
+		1890638B2629038B0055DC05 /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890638A2629038B0055DC05 /* WalletViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		189063672627A4F70055DC05 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1890636A2627A4FD0055DC05 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1890636D2627A5050055DC05 /* SingUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingUpView.swift; sourceTree = "<group>"; };
+		189063812628B1510055DC05 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		189063862628D3670055DC05 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		1890638A2629038B0055DC05 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
 		798A0F8730ACB3E38984DA3F /* Pods_WalletApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -65,6 +71,7 @@
 		189063532627A46B0055DC05 /* WalletApp */ = {
 			isa = PBXGroup;
 			children = (
+				1890637E2628B11E0055DC05 /* Wallet */,
 				189063642627A49A0055DC05 /* Login */,
 				189063542627A46B0055DC05 /* WalletAppApp.swift */,
 				189063582627A46F0055DC05 /* Assets.xcassets */,
@@ -109,13 +116,46 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
+		1890637E2628B11E0055DC05 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				189063852628D3580055DC05 /* Model */,
+				189063802628B1340055DC05 /* ViewModel */,
+				1890637F2628B12A0055DC05 /* View */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		1890637F2628B12A0055DC05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				189063812628B1510055DC05 /* WalletView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		189063802628B1340055DC05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1890638A2629038B0055DC05 /* WalletViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		189063852628D3580055DC05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				189063862628D3670055DC05 /* Banner.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		82F96EA38FFBBF86F0797970 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				0B62C0046D2772F52E2E02B5 /* Pods-WalletApp.debug.xcconfig */,
 				1157A4E196A44C7E7197C873 /* Pods-WalletApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,7 +284,10 @@
 				1890636B2627A4FD0055DC05 /* LoginViewModel.swift in Sources */,
 				189063682627A4F70055DC05 /* LoginView.swift in Sources */,
 				189063572627A46B0055DC05 /* ContentView.swift in Sources */,
+				189063872628D3670055DC05 /* Banner.swift in Sources */,
+				1890638B2629038B0055DC05 /* WalletViewModel.swift in Sources */,
 				189063552627A46B0055DC05 /* WalletAppApp.swift in Sources */,
+				189063822628B1510055DC05 /* WalletView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

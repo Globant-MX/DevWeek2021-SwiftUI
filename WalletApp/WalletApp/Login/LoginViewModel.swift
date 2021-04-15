@@ -16,6 +16,7 @@ final class LoginViewModel: ObservableObject {
   @Published var singUpEmail: String = ""
   @Published var singUpPassword: String = ""
   @Published var reEnterPassword: String = ""
+  @Published var isWalletView: Bool = false
   
   func login() {
     // TODO: Firebase implementation
@@ -26,5 +27,8 @@ final class LoginViewModel: ObservableObject {
 //        print("success")
 //      }
 //    }
+    withAnimation {
+      isWalletView.toggle()
+    }
   }
 }
