@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00F44921182845A68B2AEC24 /* Pods_WalletApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798A0F8730ACB3E38984DA3F /* Pods_WalletApp.framework */; };
+		180540A2262E48B200A57546 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 180540A1262E48B200A57546 /* FirebaseAuth */; };
+		180540A6262E491100A57546 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 180540A5262E491100A57546 /* Lottie */; };
 		189063552627A46B0055DC05 /* WalletAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063542627A46B0055DC05 /* WalletAppApp.swift */; };
 		189063572627A46B0055DC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063562627A46B0055DC05 /* ContentView.swift */; };
 		189063592627A46F0055DC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189063582627A46F0055DC05 /* Assets.xcassets */; };
@@ -23,8 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B62C0046D2772F52E2E02B5 /* Pods-WalletApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletApp.debug.xcconfig"; path = "Target Support Files/Pods-WalletApp/Pods-WalletApp.debug.xcconfig"; sourceTree = "<group>"; };
-		1157A4E196A44C7E7197C873 /* Pods-WalletApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletApp.release.xcconfig"; path = "Target Support Files/Pods-WalletApp/Pods-WalletApp.release.xcconfig"; sourceTree = "<group>"; };
 		189063512627A46B0055DC05 /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189063542627A46B0055DC05 /* WalletAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppApp.swift; sourceTree = "<group>"; };
 		189063562627A46B0055DC05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,7 +38,6 @@
 		1890638A2629038B0055DC05 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
 		18C034F7262DD62A000C7363 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		18C034FA262DDFB0000C7363 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		798A0F8730ACB3E38984DA3F /* Pods_WalletApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F44921182845A68B2AEC24 /* Pods_WalletApp.framework in Frameworks */,
+				180540A2262E48B200A57546 /* FirebaseAuth in Frameworks */,
+				180540A6262E491100A57546 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +58,6 @@
 			children = (
 				189063532627A46B0055DC05 /* WalletApp */,
 				189063522627A46B0055DC05 /* Products */,
-				82F96EA38FFBBF86F0797970 /* Pods */,
-				DAA7DE408BFF615690ECA6AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,23 +153,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		82F96EA38FFBBF86F0797970 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0B62C0046D2772F52E2E02B5 /* Pods-WalletApp.debug.xcconfig */,
-				1157A4E196A44C7E7197C873 /* Pods-WalletApp.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		DAA7DE408BFF615690ECA6AF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				798A0F8730ACB3E38984DA3F /* Pods_WalletApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,17 +160,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 189063602627A46F0055DC05 /* Build configuration list for PBXNativeTarget "WalletApp" */;
 			buildPhases = (
-				499543E2662BFCC0408785AD /* [CP] Check Pods Manifest.lock */,
 				1890634D2627A46B0055DC05 /* Sources */,
 				1890634E2627A46B0055DC05 /* Frameworks */,
 				1890634F2627A46B0055DC05 /* Resources */,
-				71176B5DC7B11913A1D3FEA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WalletApp;
+			packageProductDependencies = (
+				180540A1262E48B200A57546 /* FirebaseAuth */,
+				180540A5262E491100A57546 /* Lottie */,
+			);
 			productName = WalletApp;
 			productReference = 189063512627A46B0055DC05 /* WalletApp.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +200,10 @@
 				Base,
 			);
 			mainGroup = 189063482627A46B0055DC05;
+			packageReferences = (
+				180540A0262E48B200A57546 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				180540A4262E491100A57546 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 189063522627A46B0055DC05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,48 +224,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		499543E2662BFCC0408785AD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WalletApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71176B5DC7B11913A1D3FEA2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WalletApp/Pods-WalletApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WalletApp/Pods-WalletApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WalletApp/Pods-WalletApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1890634D2627A46B0055DC05 /* Sources */ = {
@@ -420,7 +364,6 @@
 		};
 		189063612627A46F0055DC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B62C0046D2772F52E2E02B5 /* Pods-WalletApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,7 +385,6 @@
 		};
 		189063622627A46F0055DC05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1157A4E196A44C7E7197C873 /* Pods-WalletApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -484,6 +426,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		180540A0262E48B200A57546 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+		180540A4262E491100A57546 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		180540A1262E48B200A57546 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 180540A0262E48B200A57546 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		180540A5262E491100A57546 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 180540A4262E491100A57546 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 189063492627A46B0055DC05 /* Project object */;
 }
