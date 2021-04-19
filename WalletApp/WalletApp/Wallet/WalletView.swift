@@ -12,6 +12,7 @@ struct WalletView: View {
   @ObservedObject private var model: WalletViewModel = WalletViewModel()
   @Namespace var animation
   @Environment(\.colorScheme) var colorScheme
+  @Environment(\.presentationMode) var presentationMode
 
   var body: some View {
 
@@ -32,13 +33,16 @@ struct WalletView: View {
 
               Spacer(minLength: 0)
 
-              Button(action: {}, label: {
+              Button(action: {
+                model.isExpanded.toggle()
+              }, label: {
                 Image("profile")
                   .resizable()
                   .aspectRatio(contentMode: .fill)
                   .frame(width: 40, height: 40)
                   .clipShape(Circle())
               })
+
             }
 
             HStack {
@@ -124,6 +128,31 @@ struct WalletView: View {
         }
         .zIndex(1)
         .padding()
+
+        if model.isExpanded {
+          HStack {
+            Spacer()
+            Button(action: {
+              print("Presionado")
+              presentationMode.wrappedValue.dismiss()
+            }) {
+              ZStack {
+                Circle()
+                  .foregroundColor(.init(CGColor(red: 241/255, green: 152/255, blue: 60/255, alpha: 1)))
+                  .frame(width: 40, height: 40)
+
+                Image("close_session")
+                  .resizable()
+                  .aspectRatio(contentMode: .fit)
+                  .frame(width: 30, height: 30, alignment: .center)
+
+              }
+            }
+          }
+          .offset(y: 50)
+          .padding()
+          .zIndex(2)
+        }
 
         Circle()
           .fill(Color(model.banner[model.index].color).opacity(0.5))

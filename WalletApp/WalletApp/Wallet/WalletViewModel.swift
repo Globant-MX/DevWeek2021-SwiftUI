@@ -22,5 +22,6 @@ final class WalletViewModel: ObservableObject {
   @Published var selectedCard: Card = Card(cardHolder: "", cardNumber: "", cardValidity: "", cardImage: "")
   @Published var cardAnimation: Bool = false
   @Published var scrollAnimation: Bool = false
+  @Published var isExpanded: Bool = false
 }
 
