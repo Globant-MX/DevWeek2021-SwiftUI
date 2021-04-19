@@ -17,5 +17,10 @@ final class WalletViewModel: ObservableObject {
     Banner(name: "USA", exchange: 103, color: "usa")
   ]
   @Published var index = 0
+  @Published var startAnimation: Bool = false
+  @Published var startCardRotation: Bool = false
+  @Published var selectedCard: Card = Card(cardHolder: "", cardNumber: "", cardValidity: "", cardImage: "")
+  @Published var cardAnimation: Bool = false
+  @Published var scrollAnimation: Bool = false
 }
 

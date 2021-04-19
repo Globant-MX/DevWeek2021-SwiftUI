@@ -18,6 +18,8 @@
 		189063822628B1510055DC05 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063812628B1510055DC05 /* WalletView.swift */; };
 		189063872628D3670055DC05 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063862628D3670055DC05 /* Banner.swift */; };
 		1890638B2629038B0055DC05 /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890638A2629038B0055DC05 /* WalletViewModel.swift */; };
+		18C034F8262DD62A000C7363 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C034F7262DD62A000C7363 /* Card.swift */; };
+		18C034FB262DDFB0000C7363 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C034FA262DDFB0000C7363 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		189063812628B1510055DC05 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		189063862628D3670055DC05 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		1890638A2629038B0055DC05 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		18C034F7262DD62A000C7363 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		18C034FA262DDFB0000C7363 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		798A0F8730ACB3E38984DA3F /* Pods_WalletApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				189063812628B1510055DC05 /* WalletView.swift */,
+				18C034FA262DDFB0000C7363 /* CardView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				189063862628D3670055DC05 /* Banner.swift */,
+				18C034F7262DD62A000C7363 /* Card.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -281,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1890636E2627A5050055DC05 /* SingUpView.swift in Sources */,
+				18C034F8262DD62A000C7363 /* Card.swift in Sources */,
 				1890636B2627A4FD0055DC05 /* LoginViewModel.swift in Sources */,
 				189063682627A4F70055DC05 /* LoginView.swift in Sources */,
+				18C034FB262DDFB0000C7363 /* CardView.swift in Sources */,
 				189063572627A46B0055DC05 /* ContentView.swift in Sources */,
 				189063872628D3670055DC05 /* Banner.swift in Sources */,
 				1890638B2629038B0055DC05 /* WalletViewModel.swift in Sources */,
