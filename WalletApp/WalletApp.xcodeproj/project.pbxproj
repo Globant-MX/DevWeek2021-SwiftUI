@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		180540A2262E48B200A57546 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 180540A1262E48B200A57546 /* FirebaseAuth */; };
 		180540A6262E491100A57546 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 180540A5262E491100A57546 /* Lottie */; };
+		18664EBA263A083000286005 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18664EB9263A083000286005 /* MenuView.swift */; };
+		18664EBD263A096900286005 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18664EBC263A096900286005 /* BannerView.swift */; };
+		18664EC3263A0B2700286005 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18664EC2263A0B2700286005 /* DetailView.swift */; };
+		18664EC7263A10DF00286005 /* WalletCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18664EC6263A10DF00286005 /* WalletCardsView.swift */; };
+		18664ECA263A139D00286005 /* CloseSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18664EC9263A139D00286005 /* CloseSessionView.swift */; };
 		189063552627A46B0055DC05 /* WalletAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063542627A46B0055DC05 /* WalletAppApp.swift */; };
 		189063572627A46B0055DC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063562627A46B0055DC05 /* ContentView.swift */; };
 		189063592627A46F0055DC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189063582627A46F0055DC05 /* Assets.xcassets */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18664EB9263A083000286005 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		18664EBC263A096900286005 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		18664EC2263A0B2700286005 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		18664EC6263A10DF00286005 /* WalletCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardsView.swift; sourceTree = "<group>"; };
+		18664EC9263A139D00286005 /* CloseSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseSessionView.swift; sourceTree = "<group>"; };
 		189063512627A46B0055DC05 /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189063542627A46B0055DC05 /* WalletAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppApp.swift; sourceTree = "<group>"; };
 		189063562627A46B0055DC05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +142,11 @@
 			children = (
 				189063812628B1510055DC05 /* WalletView.swift */,
 				18C034FA262DDFB0000C7363 /* CardView.swift */,
+				18664EB9263A083000286005 /* MenuView.swift */,
+				18664EBC263A096900286005 /* BannerView.swift */,
+				18664EC2263A0B2700286005 /* DetailView.swift */,
+				18664EC6263A10DF00286005 /* WalletCardsView.swift */,
+				18664EC9263A139D00286005 /* CloseSessionView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -237,7 +252,12 @@
 				18C034FB262DDFB0000C7363 /* CardView.swift in Sources */,
 				189063572627A46B0055DC05 /* ContentView.swift in Sources */,
 				189063872628D3670055DC05 /* Banner.swift in Sources */,
+				18664EC7263A10DF00286005 /* WalletCardsView.swift in Sources */,
+				18664EC3263A0B2700286005 /* DetailView.swift in Sources */,
+				18664EBA263A083000286005 /* MenuView.swift in Sources */,
+				18664EBD263A096900286005 /* BannerView.swift in Sources */,
 				1890638B2629038B0055DC05 /* WalletViewModel.swift in Sources */,
+				18664ECA263A139D00286005 /* CloseSessionView.swift in Sources */,
 				189063552627A46B0055DC05 /* WalletAppApp.swift in Sources */,
 				189063822628B1510055DC05 /* WalletView.swift in Sources */,
 			);
