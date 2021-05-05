@@ -31,6 +31,7 @@ struct CardView: View {
               VStack(alignment: .leading, spacing: 4, content: {
                 Text("CARD HOLDER")
                   .fontWeight(.bold)
+                  .font(.system(size: 14))
 
                 Text(card.cardHolder)
                   .font(.title2)
@@ -40,8 +41,9 @@ struct CardView: View {
               Spacer(minLength: 10)
 
               VStack(alignment: .leading, spacing: 4, content: {
-                Text("VALID TILL")
+                Text("VALID UNTILL")
                   .fontWeight(.bold)
+                  .font(.system(size: 14))
 
                 Text(card.cardValidity)
                   .font(.title2)

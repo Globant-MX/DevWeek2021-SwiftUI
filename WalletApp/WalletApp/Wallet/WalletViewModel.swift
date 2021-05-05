@@ -27,7 +27,6 @@ final class WalletViewModel: ObservableObject {
   @Published var scrollAnimation: Bool = false
   @Published var isExpanded: Bool = false
   //MARK: Other Property Wrappers
-  @Namespace var animation
   @Environment(\.colorScheme) var colorScheme
 
   //MARK: Methods

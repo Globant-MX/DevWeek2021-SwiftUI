@@ -13,6 +13,7 @@ struct WalletView: View {
   //MARK: Properties
   @ObservedObject private var model: WalletViewModel = WalletViewModel()
   @Environment(\.presentationMode) var presentationMode
+  @Namespace var animation
 
   //MARK: Body
   var body: some View {

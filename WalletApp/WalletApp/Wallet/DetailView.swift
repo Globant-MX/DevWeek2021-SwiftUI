@@ -11,6 +11,7 @@ import SwiftUI
 struct DetailView: View {
   //MARK: Properties
   @ObservedObject var model: WalletViewModel
+  @Namespace var animation
 
   //MARK: Body
   var body: some View {
@@ -38,7 +39,7 @@ struct DetailView: View {
 
         //MARK: Card View
         CardView(card: model.selectedCard)
-          .matchedGeometryEffect(id: "CARD_ANIMATION", in: model.animation)
+          .matchedGeometryEffect(id: "CARD_ANIMATION", in: animation)
           .padding(.horizontal)
           .frame(maxWidth: .infinity, maxHeight: getRect().height)
       }

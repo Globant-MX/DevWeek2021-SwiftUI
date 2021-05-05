@@ -11,6 +11,7 @@ import SwiftUI
 struct WalletCardsView: View {
   //MARK: Properties
   @ObservedObject var model: WalletViewModel
+  @Namespace var animation
 
   //MARK: Body
   var body: some View {
@@ -23,7 +24,7 @@ struct WalletCardsView: View {
             .rotationEffect(.init(degrees: model.startAnimation ? 0 : index == 1 ? -15 : (index == 2 ? 15 : 0)))
             .onTapGesture { model.animatedView(card: cards[index]) }
             .offset(y: model.startAnimation ? 0 : index == 1 ? 60 : (index == 2 ? -60 : 0))
-            .matchedGeometryEffect(id: "CARD_ANIMATION", in: model.animation)
+            .matchedGeometryEffect(id: "CARD_ANIMATION", in: animation)
             .rotationEffect(.init(degrees: model.selectedCard.id == cards[index].id && model.startCardRotation ? -90 : 0))
             .zIndex(model.selectedCard.id == cards[index].id ? 1000 : 0)
             .opacity(model.startAnimation ? model.selectedCard.id == cards[index].id ? 1 : 0 : 1)
