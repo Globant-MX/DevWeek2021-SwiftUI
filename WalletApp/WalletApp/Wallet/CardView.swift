@@ -41,7 +41,7 @@ struct CardView: View {
               Spacer(minLength: 10)
 
               VStack(alignment: .leading, spacing: 4, content: {
-                Text("VALID UNTILL")
+                Text("VALID UNTIL")
                   .fontWeight(.bold)
                   .font(.system(size: 14))
 

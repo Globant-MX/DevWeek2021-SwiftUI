@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//MARK: ContentView Struct
 struct ContentView: View {
   var body: some View {
     NavigationView {

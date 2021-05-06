@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+//MARK: WalletView Struct
 struct SingUpView: View {
+  //MARK: Properties
   @ObservedObject var model : LoginViewModel
-  
+
+  //MARK: Body
   var body: some View {
     ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
 
