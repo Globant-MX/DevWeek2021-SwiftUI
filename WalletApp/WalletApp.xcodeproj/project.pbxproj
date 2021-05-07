@@ -10,12 +10,12 @@
 		180540A2262E48B200A57546 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 180540A1262E48B200A57546 /* FirebaseAuth */; };
 		180540A6262E491100A57546 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 180540A5262E491100A57546 /* Lottie */; };
 		183DAB892644448400C70107 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DAB882644448400C70107 /* SplashView.swift */; };
-		183DAB8C2644561200C70107 /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 183DAB8B2644561200C70107 /* splash.json */; };
 		18664EBA263A083000286005 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18664EB9263A083000286005 /* MenuView.swift */; };
 		18664EBD263A096900286005 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18664EBC263A096900286005 /* BannerView.swift */; };
 		18664EC3263A0B2700286005 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18664EC2263A0B2700286005 /* DetailView.swift */; };
 		18664EC7263A10DF00286005 /* WalletCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18664EC6263A10DF00286005 /* WalletCardsView.swift */; };
 		18664ECA263A139D00286005 /* CloseSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18664EC9263A139D00286005 /* CloseSessionView.swift */; };
+		187107AC26458E7D005F138F /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 187107AB26458E7D005F138F /* splash.json */; };
 		189063552627A46B0055DC05 /* WalletAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063542627A46B0055DC05 /* WalletAppApp.swift */; };
 		189063572627A46B0055DC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189063562627A46B0055DC05 /* ContentView.swift */; };
 		189063592627A46F0055DC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189063582627A46F0055DC05 /* Assets.xcassets */; };
@@ -32,12 +32,12 @@
 
 /* Begin PBXFileReference section */
 		183DAB882644448400C70107 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		183DAB8B2644561200C70107 /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = splash.json; path = ../../../../../Downloads/splash.json; sourceTree = "<group>"; };
 		18664EB9263A083000286005 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		18664EBC263A096900286005 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		18664EC2263A0B2700286005 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		18664EC6263A10DF00286005 /* WalletCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardsView.swift; sourceTree = "<group>"; };
 		18664EC9263A139D00286005 /* CloseSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseSessionView.swift; sourceTree = "<group>"; };
+		187107AB26458E7D005F138F /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
 		189063512627A46B0055DC05 /* WalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189063542627A46B0055DC05 /* WalletAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAppApp.swift; sourceTree = "<group>"; };
 		189063562627A46B0055DC05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,10 +67,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		183DAB842644439C00C70107 /* Resources */ = {
+		187107A726458E17005F138F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				183DAB8B2644561200C70107 /* splash.json */,
+				187107AB26458E7D005F138F /* splash.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -94,7 +94,7 @@
 		189063532627A46B0055DC05 /* WalletApp */ = {
 			isa = PBXGroup;
 			children = (
-				183DAB842644439C00C70107 /* Resources */,
+				187107A726458E17005F138F /* Resources */,
 				1890637E2628B11E0055DC05 /* Wallet */,
 				189063642627A49A0055DC05 /* Login */,
 				189063542627A46B0055DC05 /* WalletAppApp.swift */,
@@ -247,9 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187107AC26458E7D005F138F /* splash.json in Resources */,
 				1890635C2627A46F0055DC05 /* Preview Assets.xcassets in Resources */,
 				189063592627A46F0055DC05 /* Assets.xcassets in Resources */,
-				183DAB8C2644561200C70107 /* splash.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
